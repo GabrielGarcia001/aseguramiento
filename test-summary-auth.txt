@@ -1,0 +1,8 @@
+FAIL src/config/tests/auth.test.js
+  ● Test suite failed to run
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+    C:\Users\ggarc\sistema-inventario\backend\src\config\tests\auth.test.js:2
+    import request from "supertest";
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Ran all test suites matching src/config/tests/auth.test.js.

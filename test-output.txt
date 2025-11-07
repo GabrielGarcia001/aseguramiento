@@ -1,0 +1,198 @@
+
+> sistema-inventario-backend@1.0.0 test
+> cross-env NODE_ENV=test node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand
+
+(node:13036) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[0mPOST /auth/login [32m200[0m 94.913 ms - 201[0m
+[0mPOST /auth/login [32m200[0m 85.780 ms - 209[0m
+[0mPOST /products [32m201[0m 4.775 ms - 111[0m
+[0mPOST /auth/login [32m200[0m 83.762 ms - 201[0m
+[0mPOST /auth/login [32m200[0m 92.462 ms - 209[0m
+[0mPOST /products [33m403[0m 0.609 ms - 25[0m
+[0mPOST /auth/login [32m200[0m 81.335 ms - 201[0m
+[0mPOST /auth/login [32m200[0m 81.830 ms - 209[0m
+[0mPOST /products [32m201[0m 2.702 ms - 114[0m
+[0mDELETE /products/2 [32m200[0m 3.072 ms - 32[0m
+[0mPOST /auth/login [32m200[0m 83.602 ms - 201[0m
+[0mPOST /auth/login [32m200[0m 81.888 ms - 209[0m
+[0mPOST /products [32m201[0m 2.270 ms - 116[0m
+[0mDELETE /products/2 [33m403[0m 0.631 ms - 25[0m
+[0mPOST /auth/login [32m200[0m 83.319 ms - 201[0m
+[0mPOST /auth/login [32m200[0m 84.958 ms - 209[0m
+[0mPOST /products [33m401[0m 0.213 ms - 26[0m
+[0mPOST /auth/login [32m200[0m 97.910 ms - 201[0m
+[0mPOST /auth/login [32m200[0m 95.167 ms - 209[0m
+PASS src/config/tests/roles_permissions.test.js
+  ● Console
+
+    console.log
+      [dotenv@17.2.3] injecting env (7) from .env.test -- tip: ⚙️  write to custom object with { processEnv: myObject }
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+    console.log
+      [dotenv@17.2.3] injecting env (0) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+    console.log
+      [adjustStock] request body: { productId: 1, quantity: 2, type: 'OUT', note: 'Venta prueba' }
+
+      at adjustStock (src/controllers/inventoryController.js:13:13)
+
+    console.log
+      Cerrando conexión a la base de datos (jest.setup.js)...
+
+      at Object.<anonymous> (jest.setup.js:9:15)
+
+[0mPOST /inventory [32m200[0m 6.696 ms - 42[0m
+[0mPOST /auth/login [32m200[0m 105.568 ms - 201[0m
+[0mPOST /products [32m201[0m 7.312 ms - 103[0m
+[0mPOST /products [32m201[0m 3.609 ms - 100[0m
+[0mGET /products?search=Arena [32m200[0m 2.332 ms - 321[0m
+[0mPOST /auth/login [32m200[0m 83.339 ms - 201[0m
+[0mPOST /products [32m201[0m 2.402 ms - 103[0m
+[0mPOST /products [32m201[0m 2.010 ms - 100[0m
+[0mGET /products?search=ARE-002 [32m200[0m 1.021 ms - 321[0m
+PASS src/config/tests/search_lowstock.test.js
+  ● Console
+
+    console.log
+      [dotenv@17.2.3] injecting env (7) from .env.test -- tip: ⚙️  suppress all logs with { quiet: true }
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+    console.log
+      [dotenv@17.2.3] injecting env (0) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+    console.log
+      Cerrando conexión a la base de datos (jest.setup.js)...
+
+      at Object.<anonymous> (jest.setup.js:9:15)
+
+[0mPOST /auth/login [32m200[0m 83.234 ms - 201[0m
+[0mPOST /products [32m201[0m 2.442 ms - 103[0m
+[0mPOST /products [32m201[0m 1.697 ms - 100[0m
+[0mGET /products/low-stock [32m200[0m 1.645 ms - 71[0m
+[0mPOST /auth/login [32m200[0m 143.846 ms - 201[0m
+[0mPOST /auth/login [32m200[0m 84.319 ms - 209[0m
+[0mGET /products [32m200[0m 4.057 ms - 321[0m
+PASS src/config/tests/products.test.js
+  ● Console
+
+    console.log
+      [dotenv@17.2.3] injecting env (7) from .env.test -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+    console.log
+      [dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+    console.log
+      Cerrando conexión a la base de datos (jest.setup.js)...
+
+      at Object.<anonymous> (jest.setup.js:9:15)
+
+[0mPOST /products [33m403[0m 0.665 ms - 25[0m
+[0mPOST /products [32m201[0m 4.387 ms - 113[0m
+PASS src/controllers/inventory_extra.test.js
+  ● Console
+
+    console.log
+      [dotenv@17.2.3] injecting env (7) from .env.test -- tip: ⚙️  write to custom object with { processEnv: myObject }
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+    console.log
+      [dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+    console.log
+      [adjustStock] request body: { productId: 5, quantity: 2, movementType: 'OUT', note: 'Prueba' }
+
+      at adjustStock (src/controllers/inventoryController.js:13:13)
+
+    console.log
+      [adjustStock] request body: {
+        productId: 6,
+        quantity: 5,
+        movementType: 'IN',
+        note: 'Ingreso prueba'
+      }
+
+      at adjustStock (src/controllers/inventoryController.js:13:13)
+
+    console.log
+      Cerrando conexión a la base de datos (jest.setup.js)...
+
+      at Object.<anonymous> (jest.setup.js:9:15)
+
+[0mPOST /auth/login [32m200[0m 275.738 ms - 201[0m
+[0mPOST /products [32m201[0m 6.428 ms - 112[0m
+[0mPOST /inventory [33m400[0m 6.301 ms - 30[0m
+[0mPOST /products [32m201[0m 2.363 ms - 116[0m
+[0mPOST /inventory [32m200[0m 8.571 ms - 39[0m
+PASS src/config/tests/inventory.test.js
+  ● Console
+
+    console.log
+      [dotenv@17.2.3] injecting env (7) from .env.test -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+    console.log
+      [dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+    console.log
+      [adjustStock] request body: { productId: 7, quantity: 2, movementType: 'OUT', note: 'Prueba OUT' }
+
+      at adjustStock (src/controllers/inventoryController.js:13:13)
+
+    console.log
+      [adjustStock] request body: { productId: 7, quantity: 3, movementType: 'IN', note: 'Prueba IN' }
+
+      at adjustStock (src/controllers/inventoryController.js:13:13)
+
+    console.log
+      Cerrando conexión a la base de datos (jest.setup.js)...
+
+      at Object.<anonymous> (jest.setup.js:9:15)
+
+[0mPOST /auth/login [32m200[0m 154.512 ms - 201[0m
+[0mPOST /products [32m201[0m 6.267 ms - 109[0m
+[0mPOST /inventory [32m200[0m 7.994 ms - 39[0m
+[0mPOST /inventory [32m200[0m 3.883 ms - 39[0m
+PASS src/config/tests/auth.test.js
+  ● Console
+
+    console.log
+      [dotenv@17.2.3] injecting env (7) from .env.test -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+    console.log
+      [dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+    console.log
+      Cerrando conexión a la base de datos (jest.setup.js)...
+
+      at Object.<anonymous> (jest.setup.js:9:15)
+
+
+Test Suites: 6 passed, 6 total
+Tests:       17 passed, 17 total
+Snapshots:   0 total
+Time:        7.28 s
+Ran all test suites.
+[0mPOST /auth/login [32m200[0m 246.856 ms - 201[0m
+[0mPOST /auth/login [33m401[0m 1.907 ms - 35[0m

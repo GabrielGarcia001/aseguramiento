@@ -1,0 +1,49 @@
+FAIL src/config/tests/search_lowstock.test.js
+  ● Test suite failed to run
+
+    SyntaxError: The requested module '../controllers/inventoryController.js' does not provide an export named 'getMovements'
+
+      at Runtime.linkAndEvaluateModule (node_modules/jest-runtime/build/index.js:684:5)
+
+FAIL src/config/tests/roles_permissions.test.js
+  ● Test suite failed to run
+
+    SyntaxError: The requested module '../controllers/inventoryController.js' does not provide an export named 'getMovements'
+
+      at Runtime.linkAndEvaluateModule (node_modules/jest-runtime/build/index.js:684:5)
+
+FAIL src/config/tests/products.test.js
+  ● Test suite failed to run
+
+    SyntaxError: The requested module '../controllers/inventoryController.js' does not provide an export named 'getMovements'
+
+      at Runtime.linkAndEvaluateModule (node_modules/jest-runtime/build/index.js:684:5)
+
+FAIL src/config/tests/inventory.test.js
+  ● Test suite failed to run
+
+    SyntaxError: The requested module '../controllers/inventoryController.js' does not provide an export named 'getMovements'
+
+      at Runtime.linkAndEvaluateModule (node_modules/jest-runtime/build/index.js:684:5)
+
+FAIL src/config/tests/auth.test.js
+  ● Test suite failed to run
+
+    SyntaxError: The requested module '../controllers/inventoryController.js' does not provide an export named 'getMovements'
+
+      at Runtime.linkAndEvaluateModule (node_modules/jest-runtime/build/index.js:684:5)
+
+FAIL src/controllers/inventory_extra.test.js
+  ● Test suite failed to run
+
+    Cannot find module '../../../src/app.js' from 'src/controllers/inventory_extra.test.js'
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/index.js:863:11)
+
+Test Suites: 6 failed, 6 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        2.536 s
+Ran all test suites.
+(node:1912) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
